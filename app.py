@@ -90,8 +90,8 @@ with st.spinner("데이터와 모델을 불러오는 중입니다..."):
         st.error(f"고급 리소스 로딩 중 오류가 발생했습니다: {e}")
         st.stop()
 
-st.title("💡 학술 QnA 챗봇")
-st.caption("에이블사이언스파마 학술팀 QnA 도우미입니다.")
+st.title("💡 학술 Q&A 챗봇")
+st.caption("에이블사이언스파마 학술팀 Q&A 도우미입니다.")
 
 # 대화 기록 초기화
 if "messages" not in st.session_state:
