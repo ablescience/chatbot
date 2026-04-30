@@ -40,7 +40,7 @@ def insert_qa_log(session_id, user_question, bot_answer, matched_question=None, 
         print(f"DB Insert Error: {e}")
 
 # 페이지 설정
-st.set_page_config(page_title="학술 QnA 챗봇", page_icon="💡", layout="centered")
+st.set_page_config(page_title="학술 Q&A 챗봇", page_icon="💡", layout="centered")
 
 # 디자인 스타일 적용
 st.markdown("""
