@@ -46,7 +46,10 @@ st.set_page_config(page_title="학술 Q&A 챗봇", page_icon="💡", layout="cen
 st.markdown("""
 <style>
     .main {
-        background-color: #f8f9fa;
+        background-color: #D6F2EE;
+    }
+    [data-testid="stSidebar"] {
+        background-color: #EBF9F7;
     }
     .stChatMessage {
         border-radius: 15px;
@@ -54,7 +57,7 @@ st.markdown("""
         margin-bottom: 10px;
     }
     .stChatMessage[data-testid="stChatMessageUser"] {
-        background-color: #e3f2fd;
+        background-color: #EBF9F7;
     }
     .stChatMessage[data-testid="stChatMessageAssistant"] {
         background-color: #ffffff;
@@ -181,7 +184,7 @@ if prompt := st.chat_input("질문을 입력하세요..."):
 with st.sidebar:
     st.header("사용 안내")
     st.info("""
-    이 챗봇은 에이블사이언스 데이터베이스에 등록된 학술 데이터를 바탕으로 답변합니다. 
+    이 챗봇은 `data.jsonl`에 등록된 학술 데이터를 바탕으로 답변합니다. 
     질문의 의미를 파악하여 가장 유사한 답변을 찾아드립니다.
     
     - 검색된 유사도 점수가 낮으면 학술팀 안내 메시지가 출력됩니다.
